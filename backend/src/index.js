@@ -4,9 +4,14 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 
-const routes = require('./routes')
+const routes = require('./routes');
 
-mongoose.connect('mongodb://root:root@localhost:27017/omnistack?connectTimeoutMS=300000', {
+const MONGODB_USER = 'root';
+const MONGODB_PASSWORD = 'admin';
+const DB_NAME = 'omnistack';
+
+mongoose.Promise = global.Promise;
+mongoose.connect(`mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@localhost:27017/${DB_NAME}?authSource=admin&readPreference=primary&ssl=false`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
