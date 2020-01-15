@@ -38,4 +38,6 @@ module.exports = {
         
         return res.json(dev)
     }
+
+    //TODO: implements method to update and delete
 }
