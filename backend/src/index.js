@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const routes = require('./routes');
 
 const MONGODB_USER = 'root';
-const MONGODB_PASSWORD = 'admin';
+const MONGODB_PASSWORD = 'root';
 const DB_NAME = 'omnistack';
 
 mongoose.Promise = global.Promise;
