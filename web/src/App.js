@@ -32,7 +32,13 @@ function App() {
         </form>
       </aside>
       <main>
-
+        <ul>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars0.githubusercontent.com/u/26237233?s=460&v=4" alt="Luis Daniel Assulfi"/>
+            </header>
+          </li>
+        </ul>
       </main>
     </div>
   );
